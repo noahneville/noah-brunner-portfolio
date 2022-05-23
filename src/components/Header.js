@@ -26,7 +26,7 @@ export default function Header() {
     return (
         <div>
             <Navigation currentPage={currentPage} pageChange={pageChange} />
-            {/* {renderPage()} */}
+            {renderPage()}
         </div>
     );
 }
