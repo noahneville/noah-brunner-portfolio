@@ -55,3 +55,26 @@ Text or icon links to developer's Github, linkedin, profile on a third platform
 * Design should be mobile first, with a good color pallete and a large readable font. 
 
 * Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
+
+
+## Things To Do
+
+* ~~Build Project.js generic card that we can inject our specific data into~~
+
+* ~~Build contact form~~ 
+
+
+* Build Resume.js with a large image of our resume that downloads the file when clicked
+
+* Add Icons to Footer with react-icons
+
+* Fix Contact.js submit button
+
+* Add focus check and email validation check to Contact.js
+
+* Fix navbar with MUI component
+
+* Write About Me
+
+* Stylings for everything 
+

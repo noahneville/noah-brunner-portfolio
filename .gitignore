@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# x-instructions.md
-# x-pseudocode.md
+x-instructions.md
+x-pseudocode.md

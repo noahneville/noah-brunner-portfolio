@@ -1,14 +1,18 @@
 import React from 'react';
+import Project from '../Project';
 
 export default function Contact() {
+
+  const tempData = {
+    title: 'NAME',
+    image: 'https://preview.redd.it/t900r2m5uf191.png?width=1024&auto=webp&s=079c3f18ec9359b4f3587cb3c3142a2352e747d2',
+    github: 'https://github.com/oliviertassinari/react-swipeable-views',
+    deployedSite: 'https://miro.medium.com/max/1400/1*2mEBcFqcQ8hDiX8hvvG9ug.png'
+  }
+
   return (
     <div>
-      <p>
-        Pellentesque laoreet mi convallis ipsum fringilla, eget vestibulum nunc vulputate. Vivamus eu tincidunt massa, eget feugiat risus. Sed enim massa, dignissim ac luctus non, varius sit amet lacus. Fusce tincidunt erat ante. 
-        Phasellus congue blandit aliquet. Mauris sit amet viverra arcu, non sodales enim. Vivamus nisi magna, auctor ac nisl sit amet, interdum mollis nibh. Nunc ut faucibus metus, ut maximus arcu. 
-        Sed elementum, nisl vel finibus porttitor, magna lorem pharetra tellus, a tincidunt nulla nunc non ante. 
-        Phasellus nec lectus sagittis, tristique quam quis, pharetra nunc. Integer mollis rhoncus efficitur. Mauris commodo vehicula erat ac tincidunt. 
-      </p>
+      < Project title={tempData.title} image={tempData.image} github={tempData.github} deployedSite={tempData.deployedSite}/>
     </div>
   )
 }

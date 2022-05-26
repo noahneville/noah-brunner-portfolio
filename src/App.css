@@ -1,3 +1,10 @@
+* {
+  background-color: rgb(190, 133, 192);
+  color: white;
+  list-style: none;
+}
+
+
 .App {
   text-align: center;
 }
