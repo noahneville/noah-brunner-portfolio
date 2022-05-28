@@ -1,43 +1,6 @@
-// import React from 'react';
-
-// export default function Contact() {
-//     return (
-//         <div>
-//             <p>
-//             Nunc vel lectus non sem porta faucibus. Duis ultrices vestibulum lectus, eu gravida elit pretium vel.
-//             Nulla facilisi. Vivamus vitae cursus nisl. Mauris quam ipsum, pulvinar vel dolor vitae, dictum tincidunt urna.
-//             Cras porttitor ligula magna, sit amet ultricies tortor egestas vel. Praesent at venenatis enim.
-//             Maecenas consectetur cursus tortor, non vehicula ligula egestas at. Ut a mauris ut est gravida pretium. Cras id aliquet tortor.
-//             </p>
-//         </div>
-//     )
-// }
-
-// function TODO:ChangeName() {
-//     const [input, setInput] = useState('');
-//     let [eagerness, setEagerness] = useState('');
-
-//     const handleSubmit = (e) => {
-//       e.preventDefault();
-
-//       props.onSubmit({
-//         id: Math.random(Math.floor() * 1000),
-//         text: input,
-//         eagerness: eagerness,
-//       });
-
-//       setInput('');
-//       setEagerness('');
-//     };
-
-//     const handleChange = (e) => {
-//       setInput(e.target.value);
-//     };
-
-// }
-
 import React, { useState } from "react";
 import { Grid, TextField, Button } from "@mui/material";
+import { validateEmail } from '../../util/emailValidator';
 // import TextField from "@material-ui/core/TextField";
 // import Button from "@material-ui/core/Button";
 const defaultValues = {
@@ -48,14 +11,21 @@ const defaultValues = {
   favoriteNumber: 0,
 };
 const Contact = () => {
-  const [formValues, setFormValues] = useState(defaultValues);
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({
-      ...formValues,
-      [name]: value,
-    });
-  };
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formState, setFormState ] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const { name, email, message } = formState;
+  const [formValues, setFormValues ] = useState(defaultValues);
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormValues({
+  //     ...formValues,
+  //     [name]: value,
+  //   });
+  // };
   // const handleSliderChange = (name) => (e, value) => {
   //   setFormValues({
   //     ...formValues,
@@ -64,15 +34,34 @@ const Contact = () => {
   // };
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formValues);
-		formValues.name = "";
+    // console.log(formValues);
+		// formValues.name = "";
   };
+
+  const handleChange = (event) => {
+    if(event.target.name === 'email') {
+      const isValid = validateEmail(event.target.value);
+      if(!isValid) {
+        setErrorMessage('Not a valid email.');
+        console.log('not valid')
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+    if(!event.target.value.length) {
+      setErrorMessage(`${event.target.name} is required.`)
+      console.log("working");
+    } else {
+      setErrorMessage('');
+    }
+  }
+  } 
   return (
     <form onSubmit={handleSubmit}>
       <Grid container alignItems="center" justify="center" direction="column">
         <Grid item>
-          <TextField id="name-input" name="name" label="Name" type="text" value={formValues.name} onChange={handleInputChange} />
-          <TextField id="email-input" name="email" label="Email" type="text" value={formValues.email} onChange={handleInputChange} />
+          <input id="name-input" name="name" label="Name" type="text"  onBlur={handleChange} />
+          <input id="email-input" name="email" label="Email" type="text"  onBlur={handleChange}  />
           
         </Grid>
 				<TextField
@@ -83,6 +72,12 @@ const Contact = () => {
           value= {formValues.message}
         />
 				{/* <TextField error id="outlined-error-helper-text" label="Error" defaultValue="Hello World" helperText="Incorrect entry." /> */}
+        {errorMessage && (
+          <div>
+            <p className='error-text'>{errorMessage}</p>
+        </div>
+        )}
+        
         <Button variant="contained" color="primary" type="submit">
           Submit
         </Button>

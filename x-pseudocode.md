@@ -72,7 +72,7 @@ Text or icon links to developer's Github, linkedin, profile on a third platform
 
 * Add focus check and email validation check to Contact.js
 
-* Fix navbar with MUI component
+* ~~Fix navbar with MUI component~~
 
 * Write About Me
 

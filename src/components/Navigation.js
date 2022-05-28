@@ -1,4 +1,5 @@
 import React from 'react';
+import Avatar from '@mui/material/Avatar';
 
 export default function Navigation({ currentPage, pageChange}) {
   return (
@@ -31,6 +32,7 @@ export default function Navigation({ currentPage, pageChange}) {
             </a>
           </li>
         </ul>
+        {/* <Avatar alt="Noah Brunner" src="../assets/avi.png" /> */}
       </div>
     </nav>
   );
