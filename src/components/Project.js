@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
 // export default function Project({ projectCards }) {
 //   return (
@@ -18,27 +19,31 @@ import Typography from '@mui/material/Typography';
 
 
 
-export default function Project({image, title, description, github, deployedSite}) {
-  return (
+function Project(props) {
+  return props.projectData.map((item) => (
+    <Grid item>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        image={image}
+        image={item.image}
         alt="screenshot of project"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {title}
+          {item.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {description}
+          {item.description}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href={github}>Github</Button>
-        <Button size="small" href={deployedSite}>Deployed Site</Button>
+        <Button size="small" variant="outlined" color="success" href={item.github}>Github</Button>
+        <Button size="small" variant="contained" color="success" href={item.deployedSite}>Deployed Site</Button>
       </CardActions>
     </Card>
-  );
+    </Grid>
+  ));
 }
+
+export default Project;

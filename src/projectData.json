@@ -2,7 +2,7 @@
   {
     "title": "Note Taker",
     "description": "A simple webapp to write and save notes",
-    "image": "../../assets/img/notes.png",
+    "image": "https://github.com/noahneville/noah-brunner-portfolio/blob/main/src/assets/img/notes.png?raw=true",
     "github": "https://github.com/noahneville/Note-Taker",
     "deployedSite": "https://nnb-note-taker.herokuapp.com/"  
   },
@@ -16,29 +16,29 @@
   {
     "title": "Employee Tracker",
     "description": "A command-line application that interacts with a MySQL database to keep track of departments, roles and employees within an organization.",
-    "image": "../assets/img/employee-tracker.png",
+    "image": "https://github.com/noahneville/noah-brunner-portfolio/blob/main/src/assets/img/employee-tracker.png?raw=true",
     "github": "https://github.com/noahneville/Employee-Tracker",
     "deployedSite": "https://drive.google.com/drive/u/0/folders/1S4R0221hbByMxv7ZuCIKgdz_ZnrdBsM-"   
   },
   {
     "title": "Weather Dashboard",
     "description": "A minimalist webapp that displays current weather conditions and a 5 day forecast for any city you search.",
-    "image": "../../assets/img/weather",
+    "image": "https://github.com/noahneville/noah-brunner-portfolio/blob/main/src/assets/img/weather.png?raw=true",
     "github": "https://github.com/noahneville/weather-dashboard",
     "deployedSite": "https://noahneville.github.io/weather-dashboard/"   
   },
   {
-    "title": "",
-    "description": "",
-    "image": "",
-    "github": "",
-    "deployedSite": ""   
+    "title": "Work Day Scheduler",
+    "description": "Plan your work day, hour by hour, through the web.",
+    "image": "https://github.com/noahneville/noah-brunner-portfolio/blob/main/src/assets/img/workday-planner.png?raw=true",
+    "github": "https://github.com/noahneville/work-day-scheduler",
+    "deployedSite": "https://noahneville.github.io/work-day-scheduler/"   
   },
   {
-    "title": "",
-    "description": "",
-    "image": "",
-    "github": "",
-    "deployedSite": ""   
+    "title": "Just Another Text Editor",
+    "description": "An online text editor that follows PWA standards to download and run as an offline application.",
+    "image": "https://github.com/noahneville/text-editor/raw/main/assets/img/deployed-screenshot.PNG",
+    "github": "https://github.com/noahneville/text-editor",
+    "deployedSite": "https://rocky-citadel-45599.herokuapp.com/"   
   }
 ]
