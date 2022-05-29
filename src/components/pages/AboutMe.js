@@ -1,12 +1,12 @@
 import React from "react";
-import avi from "../../assets/avi.png";
+import avi from "../../assets/img/avi.png";
 
 export default function AboutMe() {
   return (
     <div class="container-fluid">
       <div class="row">
         <div class="col-4">
-          <img src={avi} class="rounded float-start" alt="avatar of Noah" />
+          <img src={avi} class="rounded img-fluid float-start" alt="avatar of Noah" />
         </div>
         <div class="col-8">
           <p>

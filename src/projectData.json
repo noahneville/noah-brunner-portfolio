@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Note Taker",
+    "description": "A simple webapp to write and save notes",
+    "image": "../../assets/img/notes.png",
+    "github": "https://github.com/noahneville/Note-Taker",
+    "deployedSite": "https://nnb-note-taker.herokuapp.com/"  
+  },
+  {
+    "title": "Dinner & Drink",
+    "description": "Find recipe & wine pairings based on your dietary needs",
+    "image": "https://github.com/noahneville/Meal-Planner/raw/main/assets/images/background.jpeg",
+    "github": "https://github.com/noahneville/Meal-Planner", 
+    "deployedSite": "https://noahneville.github.io/Meal-Planner/"
+  },
+  {
+    "title": "Employee Tracker",
+    "description": "A command-line application that interacts with a MySQL database to keep track of departments, roles and employees within an organization.",
+    "image": "../assets/img/employee-tracker.png",
+    "github": "https://github.com/noahneville/Employee-Tracker",
+    "deployedSite": "https://drive.google.com/drive/u/0/folders/1S4R0221hbByMxv7ZuCIKgdz_ZnrdBsM-"   
+  },
+  {
+    "title": "Weather Dashboard",
+    "description": "A minimalist webapp that displays current weather conditions and a 5 day forecast for any city you search.",
+    "image": "../../assets/img/weather",
+    "github": "https://github.com/noahneville/weather-dashboard",
+    "deployedSite": "https://noahneville.github.io/weather-dashboard/"   
+  },
+  {
+    "title": "",
+    "description": "",
+    "image": "",
+    "github": "",
+    "deployedSite": ""   
+  },
+  {
+    "title": "",
+    "description": "",
+    "image": "",
+    "github": "",
+    "deployedSite": ""   
+  }
+]

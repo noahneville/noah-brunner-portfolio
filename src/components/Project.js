@@ -18,22 +18,21 @@ import Typography from '@mui/material/Typography';
 
 
 
-export default function Project({image, title, github, deployedSite}) {
+export default function Project({image, title, description, github, deployedSite}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
         image={image}
-        alt="green iguana"
+        alt="screenshot of project"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {description}
         </Typography>
       </CardContent>
       <CardActions>

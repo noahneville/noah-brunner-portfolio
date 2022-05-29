@@ -1,12 +1,12 @@
 import React from 'react';
-import Avatar from '@mui/material/Avatar';
+
 
 export default function Navigation({ currentPage, pageChange}) {
   return (
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#AboutMe">Noah Brunner</a>
-        <ul className='navbar justify-content-center'>
+    <div className="navbar">
+      <div className="container">
+        <span className="navbar-text">Noah Brunner</span>
+        <ul className='nav nav-tabs justify-content-end'>
           <li className='nav-item'>
             <a href='#AboutMe' onClick={() => pageChange('AboutMe')} 
             className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>
@@ -32,9 +32,8 @@ export default function Navigation({ currentPage, pageChange}) {
             </a>
           </li>
         </ul>
-        {/* <Avatar alt="Noah Brunner" src="../assets/avi.png" /> */}
       </div>
-    </nav>
+    </div>
   );
 };
 
