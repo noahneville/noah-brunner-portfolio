@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A portfolio highlighting my experience and previous projects as a web developer, written in React.
 
-## Available Scripts
+## Usage
 
-In the project directory, you can run:
+Here's a screenshot showcasing the site's design: 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![screenshot of deployed site](src%5Cassets%5Cimg%5Cdeployed-screenshot.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To use it, simply navigate through the tabs in the upper right hand corner, or click the links in the footer to check out my Github, LinkedIn and LeetCode profiles. 
 
-### `npm test`
+The site can be viewed live [here](https://noahneville.github.io/noah-brunner-portfolio/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
+MIT License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Thanks to Lina Choi and James Edwards for helping me figure out a bug in my footer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Thanks to my tutor, Dan Ringenbach, for helping implement the onBlur functionality in the Contact form. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
+### Acceptance Criteria: 40%
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Technical 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  * Application must use React to render content.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within  it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
 
-## Learn More
+  * Application has a single `Project` component that’s used multiple times in the Portfolio section.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  * Application has a single `Footer` component that appears on multiple pages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  * Application must be deployed to GitHub Pages.
 
-### Code Splitting
+Deployment: 32%
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Application deployed at live URL.
 
-### Analyzing the Bundle Size
+* Application loads with no errors.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Application GitHub URL submitted.
 
-### Making a Progressive Web App
+* GitHub repository contains application code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Application Quality: 15%
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* User experience is intuitive and easy to navigate.
 
-### Deployment
+* User interface style is clean and polished.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Application uses a color scheme other than the default Bootstrap color palette.
 
-### `npm run build` fails to minify
+Repository Quality: 13%
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Repository has a unique name.
+
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains high-quality README file with description, screenshot, and link to deployed application.
