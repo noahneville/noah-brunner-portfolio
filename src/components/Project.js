@@ -30,7 +30,7 @@ function Project(props) {
         alt="screenshot of project"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="text.secondary">
           {item.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
@@ -38,8 +38,8 @@ function Project(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="outlined" color="success" href={item.github}>Github</Button>
-        <Button size="small" variant="contained" color="success" href={item.deployedSite}>Deployed Site</Button>
+        <Button size="small" variant="outlined"  href={item.github}>Github</Button>
+        <Button size="small" variant="outlined"  href={item.deployedSite}>Deployed Site</Button>
       </CardActions>
     </Card>
     </Grid>

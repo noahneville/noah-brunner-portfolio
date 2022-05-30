@@ -15,8 +15,8 @@ export default function Portfolio() {
   
 
   return (
-    <div className='container-fluid'>
-      <Grid container spacing={3}>
+    <div className='container-fluid page-container'>
+      <Grid container spacing={8} justifyContent='center'>
         < Project projectData={projectData}/>
       </Grid>
     </div>

@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { Grid, TextField, Button } from "@mui/material";
 import { validateEmail } from "../../util/emailValidator";
-// import TextField from "@material-ui/core/TextField";
-// import Button from "@material-ui/core/Button";
+
 const defaultValues = {
   name: "",
-  age: 0,
-  gender: "",
-  os: "",
-  favoriteNumber: 0,
+  email: "",
+  message: "",
 };
 const Contact = () => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -19,23 +16,14 @@ const Contact = () => {
   });
   const { name, email, message } = formState;
   const [formValues, setFormValues] = useState(defaultValues);
-  // const handleInputChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormValues({
-  //     ...formValues,
-  //     [name]: value,
-  //   });
-  // };
-  // const handleSliderChange = (name) => (e, value) => {
-  //   setFormValues({
-  //     ...formValues,
-  //     [name]: value,
-  //   });
-  // };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(formValues);
-    // formValues.name = "";
+    if (name.length && email.length && message.length) {
+      window.location.href = `mailto: noahneville@gmail.com?cc=${email}&subject=portfolioContact&body=${message}}`;
+
+      setFormState('')
+  };
   };
 
   const handleChange = (event) => {
@@ -57,13 +45,19 @@ const Contact = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <Grid container alignItems="center" justify="center" direction="column">
+    <form onSubmit={handleSubmit} className='container-fluid page-container Contact'>
+      <h2>Contact Me</h2>
+      <p >Enter your name, email and a message below to get in contact with me.</p>
+      <Grid container alignItems="center" spacing={2} direction="column">
         <Grid item>
           <input id="name-input" name="name" label="Name" type="text" onBlur={handleChange} />
+        </Grid>
+        <Grid item>
           <input id="email-input" name="email" label="Email" type="text" onBlur={handleChange} />
         </Grid>
-        <TextField id="message" label="Message" multiline rows={4} value={formValues.message} />
+        <Grid item>
+        <TextField id="message" label="Message" multiline rows={4} />
+        </Grid>
         {/* <TextField error id="outlined-error-helper-text" label="Error" defaultValue="Hello World" helperText="Incorrect entry." /> */}
         {errorMessage && (
           <div>
@@ -71,7 +65,7 @@ const Contact = () => {
           </div>
         )}
 
-        <Button variant="contained" color="primary" type="submit">
+        <Button variant="contained" color="primary" type="submit" onClick={handleSubmit}>
           Submit
         </Button>
       </Grid>
@@ -80,3 +74,11 @@ const Contact = () => {
 };
 
 export default Contact;
+
+{/* <Button
+  onClick={() => {
+    alert('clicked');
+  }}
+>
+  Click me
+</Button> */}

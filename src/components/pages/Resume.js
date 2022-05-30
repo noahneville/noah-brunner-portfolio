@@ -1,13 +1,26 @@
-import React from 'react';
+import React from "react";
+import resume from "../../assets/docs/resume.PDF";
 
 export default function Resume() {
   return (
-      <div>
-          <p>
-          Donec id sollicitudin ipsum. Pellentesque tincidunt velit sit amet sem ultrices posuere. Nullam volutpat ornare ex, id ultrices neque lobortis a. 
-          Mauris euismod, magna vel vehicula auctor, felis mauris lobortis quam, tristique dictum turpis nunc a tellus. Vestibulum nec elit sit amet nisl mattis commodo vel a est. 
-          Donec quis gravida dolor. Sed eu hendrerit tortor. Quisque et scelerisque ipsum. In hac habitasse platea dictumst. 
-          </p>
-      </div>
-  )
+    <div class="container-fluid page-container Resume">
+      <h2>Resume</h2>
+      <p>Here are some of the technologies and skills I've picked up in my Bootcamp:</p>
+      <ul>
+        <li>React</li>
+        <li>GraphQL</li>
+        <li>MongoDB</li>
+        <li>Mongoose</li>
+        <li>Express</li>
+        <li>Node</li>
+        <li>MySQL</li>
+        <li>Sequelize</li>
+        <li>Bootstrap</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      <p>You can download my resume  <a class="resume-link" href={resume} download="NoahBrunnerResume">here.</a>
+      </p>
+    </div>
+  );
 }
