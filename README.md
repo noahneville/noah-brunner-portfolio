@@ -7,7 +7,7 @@ A portfolio highlighting my experience and previous projects as a web developer,
 Here's a screenshot showcasing the site's design: 
 
 
-![screenshot of deployed site](src%5Cassets%5Cimg%5Cdeployed-screenshot.PNG)
+![screenshot of deployed site](./src/assets/img/deployed-screenshot.PNG)
 
 To use it, simply navigate through the tabs in the upper right hand corner, or click the links in the footer to check out my Github, LinkedIn and LeetCode profiles. 
 
